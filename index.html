@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Karl Popper - Filósofo de la Ciencia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --color-primary: #1e3a8a;
+            --color-secondary: #1e293b;
+            --color-accent: #d97706;
+            --color-text: #374151;
+            --color-light: #f8fafc;
+            --color-white: #ffffff;
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+        }
+
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+            background: var(--color-light);
+            color: var(--color-text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: var(--color-white);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .nav-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2em;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: var(--color-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+            .nav-link:hover {
+                color: var(--color-accent);
+            }
+
+        .hero {
+            background: linear-gradient(90deg, #1e293b 0%, #1e3a8a 100%);
+            color: var(--color-white);
+            padding: 4rem 0 2rem 0;
+            text-align: center;
+        }
+
+            .hero img {
+                width: 170px;
+                border-radius: 1em;
+                box-shadow: var(--shadow-md);
+                margin-bottom: 1.2em;
+            }
+
+            .hero h1 {
+                font-size: 2.7em;
+                margin: 0.2em 0 0.1em 0;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            .hero .subtitle {
+                font-size: 1.3em;
+                font-weight: 300;
+                margin-bottom: 0.6em;
+            }
+
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: 1.2em;
+            box-shadow: var(--shadow-md);
+            padding: 2.5em 2em 2em 2em;
+            margin-top: -2em;
+            margin-bottom: 2em;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: var(--color-primary);
+            margin-top: 1.7em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 0.2em;
+            font-weight: 700;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #fefbf3 0%, #f8f4e8 100%);
+            border-left: 4px solid var(--color-accent);
+            border-radius: 0.5em;
+            padding: 1.1em 1.5em;
+            margin: 1.3em 0;
+            font-style: italic;
+            color: #b45309;
+            font-size: 1.1em;
+        }
+
+        .works-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.5em 0 0 0;
+        }
+
+            .works-list li {
+                margin: 0.7em 0;
+            }
+
+            .works-list a {
+                color: var(--color-primary);
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+                .works-list a:hover {
+                    color: var(--color-accent);
+                    text-decoration: underline;
+                }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin-top: 1.5em;
+        }
+
+            .links a {
+                background: var(--color-primary);
+                color: white;
+                padding: 0.6em 1.2em;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1em;
+                transition: background 0.2s;
+            }
+
+                .links a:hover {
+                    background: var(--color-accent);
+                }
+
+        @media (max-width: 700px) {
+            .main {
+                padding: 1.2em 0.5em;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 0.6em;
+            }
+
+            .nav-menu {
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#inicio" class="nav-brand">Karl Popper</a>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#biografia">Biografía</a></li>
+                <li><a class="nav-link" href="#pensamiento">Pensamiento</a></li>
+                <li><a class="nav-link" href="#obras">Obras</a></li>
+                <li><a class="nav-link" href="#influencias">Influencias</a></li>
+                <li><a class="nav-link" href="#contexto">Contexto</a></li>
+                <li><a class="nav-link" href="#enlaces">Enlaces</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Karl_Popper.jpg" alt="Karl Popper">
+        <h1>Karl Popper</h1>
+        <div class="subtitle">El Filósofo de la Ciencia y la Sociedad Abierta</div>
+        <div>1902–1994 • Viena - Londres</div>
+    </section>
+
+    <main class="main">
+        <section id="biografia">
+            <h2 class="section-title">Biografía Intelectual</h2>
+            <p>
+                Karl Raimund Popper nació en Viena en 1902 en el seno de una familia judía culta. Se doctoró en Filosofía en 1928 y, tras el ascenso del nazismo, emigró a Nueva Zelanda y luego a Inglaterra, donde desarrolló la mayor parte de su carrera intelectual. Falleció en Londres en 1994.
+            </p>
+            <div class="quote-box">
+                “Nuestra ignorancia debe ser ilimitada; y sólo así podemos aprender.”
+            </div>
+        </section>
+
+        <section id="pensamiento">
+            <h2 class="section-title">Pensamiento Filosófico Central</h2>
+            <p>
+                Karl Popper es conocido principalmente por su filosofía de la ciencia basada en el <strong>falsacionismo</strong>, que sostiene que la ciencia avanza mediante la formulación de hipótesis que deben ser falsables, es decir, susceptibles de ser refutadas mediante la experiencia o el experimento.
+            </p>
+            <p>
+                Además, Popper criticó el <strong>inductivismo clásico</strong> y defendió el <strong>método hipotético-deductivo</strong>, donde las teorías científicas no se prueban definitivamente, sino que se someten a intentos rigurosos de refutación. Para Popper, ninguna teoría puede considerarse verdadera de manera absoluta, sino que permanece provisional hasta que sea refutada y reemplazada por una mejor.
+            </p>
+            <p>
+                En su <strong>filosofía política</strong>, Popper defendió la idea de la <strong>sociedad abierta</strong>, caracterizada por la democracia, la crítica racional y la oposición al totalitarismo y al dogmatismo ideológico. Consideraba que la libertad de crítica y la posibilidad de cambiar las instituciones mediante procedimientos democráticos eran esenciales para evitar el autoritarismo.
+            </p>
+            <p>
+                Popper también desarrolló la idea de que el <strong>conocimiento es provisional</strong> y siempre sujeto a revisión, enfatizando la importancia del error y la crítica como motores del progreso científico y social. Según él, el avance del conocimiento depende de la existencia del desacuerdo y de la disposición a revisar nuestras creencias a la luz de nuevas evidencias.
+            </p>
+            <p>
+                Su concepto de <strong>falsabilidad</strong> se convirtió en un criterio fundamental para distinguir la ciencia de la pseudociencia, influyendo profundamente en la filosofía y metodología científica contemporánea.
+            </p>
+            <div class="quote-box">
+                “La ciencia debe comenzar con mitos y con la crítica de mitos.”
+            </div>
+            <div class="quote-box">
+                “El crecimiento del conocimiento depende por completo de la existencia del desacuerdo.”
+            </div>
+            <div class="quote-box">
+                “Podemos describir el método científico como el método de la conjetura audaz y el intento de refutación.”
+            </div>
+            <p>
+                En resumen, su pensamiento se centra en la <strong>crítica racional</strong>, la importancia del desacuerdo y la revisión constante del conocimiento para avanzar en la ciencia y la sociedad[1].
+            </p>
+        </section>
+
+        <section id="obras">
+            <h2 class="section-title">Principales Obras</h2>
+            <ul class="works-list">
+                <li>
+                    <strong>La lógica de la investigación científica</strong> (1934)
+                    — <a href="https://archive.org/details/popper-karl-raimund-la-logica-de-la-investigacion-cientifica-1962" target="_blank">Archive.org</a>
+                </li>
+                <li>
+                    <strong>La sociedad abierta y sus enemigos</strong> (1945)
+                    — <a href="https://archive.org/details/popper-karl-raimund-la-logica-de-la-investigacion-cientifica-1962" target="_blank">Archive.org</a>
+                </li>
+                <li>
+                    <strong>Conjeturas y refutaciones</strong> (1963)
+                    — <a href="https://archive.org/details/karl-popper-conjeturas-y-refutaciones.-el-desarrollo-del-conocimiento-cientifico">Archive.org</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="influencias">
+            <h2 class="section-title">Influencias Filosóficas</h2>
+            <p>
+                <strong>Recibidas:</strong> Kant, Einstein, Schlick, y una relación crítica con el Círculo de Viena.<br>
+                <strong>Ejercidas:</strong> Thomas Kuhn, Imre Lakatos, Paul Feyerabend, y numerosos científicos y filósofos contemporáneos.
+            </p>
+        </section>
+
+        <section id="contexto">
+            <h2 class="section-title">Contexto Histórico y Filosófico</h2>
+            <p>
+                Popper vivió en una época marcada por el auge del positivismo lógico, los totalitarismos y la crisis de la ciencia tradicional. Su obra es una respuesta crítica al dogmatismo científico y político, defendiendo el racionalismo crítico y la libertad intelectual.
+            </p>
+        </section>
+
+        <section id="enlaces">
+            <h2 class="section-title">Enlaces Externos y Referencias</h2>
+            <div class="links">
+                <a href="https://es.wikipedia.org/wiki/Karl_Popper" target="_blank">Wikipedia</a>
+                <a href="https://www.academia.edu/search?q=Karl Popper" target="_blank">Academia.edu</a>
+                <a href="https://archive.org/search.php?query=Karl Popper" target="_blank">Archive.org</a>
+                <a href="https://www.amazon.es/s?k=Karl+Popper" target="_blank">Amazon</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
